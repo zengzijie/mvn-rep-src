@@ -84,6 +84,7 @@ public class NucleicTimer {
                     iTimestampDao.save(dataTimestamp);
                 }
                 //创建该业务的时间戳
+
                 List<JSONObject> resultList = JSONObject.parseObject(result).getJSONObject("data").getJSONArray("data").toJavaList(JSONObject.class);
                 logger.info("核酸检测数据量：" + resultList.size());
                 if (resultList.size() > 0) {
