@@ -93,7 +93,6 @@ public class NucleicTimer {
                         for (String key : p.keySet()) {
                             p.put(key, EncryptUtils.decrypt(p.getString(key), "jnh2021"));
                         }
-                        p.put("id",p.getString("id_number"));
                         //设置入库时间
                         p.put("rksj", rksj);
                         dataList.add(p.toJavaObject(Nucleic.class));

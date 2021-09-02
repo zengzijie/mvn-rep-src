@@ -16,11 +16,11 @@ import java.io.Serializable;
 @Table(name = "t_nucleic_info")
 public class Nucleic implements Serializable {
     @Id
-//    @ApiModelProperty(value = "主键", name = "id", example = "12146788194582528")
-//    @GeneratedValue(generator = "system-uuid")
-//    @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    @GenericGenerator(name = "custom-id", strategy = "com.skyinfo.taishantimer.config.CustomUUIDGenerator")
-    @GeneratedValue(generator = "custom-id")
+    @ApiModelProperty(value = "主键", name = "id", example = "12146788194582528")
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+//    @GenericGenerator(name = "custom-id", strategy = "com.skyinfo.taishantimer.config.CustomUUIDGenerator")
+//    @GeneratedValue(generator = "custom-id")
     private String id;
     private String street_name;
     private String community_name;
